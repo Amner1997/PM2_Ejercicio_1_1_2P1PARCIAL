@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2_Ejercicio_1_1_2P1PARCIAL.MainPage">
+    
+    <StackLayout>
+        <Label Text="Numero 1" FontSize="20" TextColor="Black" Margin="10,20,0,0"/>
+        <Frame BorderColor="Gray" BackgroundColor="DodgerBlue" Padding="2" Margin="10">
+            <Entry x:Name="numero1Entry" Keyboard="Numeric" />
+        </Frame>
+        <Label Text="Numero 2" FontSize="20" TextColor="Black" Margin="10,10,0,0"/>
+        <Frame BorderColor="Gray" BackgroundColor="DodgerBlue" Padding="2" Margin="10">
+            <Entry x:Name="numero2Entry"  Keyboard="Numeric" />
+        </Frame>
+        <StackLayout Spacing="10">
+            <Button x:Name="suma" TextTransform="None" Margin="5" Text="Suma" FontSize="20" Clicked="suma_Clicked"/>
+            <Button x:Name="resta" TextTransform="None" Margin="5" Text="Resta" FontSize="20" Clicked="resta_Clicked"/>
+            <Button x:Name="division" TextTransform="None" Margin="5" Text="Division" FontSize="20" Clicked="division_Clicked"/>
+            <Button x:Name="multiplicacion" TextTransform="None" Margin="5" Text="Multiplicación" FontSize="20" Clicked="multiplicacion_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
